@@ -1,0 +1,867 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body > .first {
+  width: 100%;
+  height: 120vh;
+  background-image: url("./images//food1.jpg");
+  /* background-color: black; */
+  object-fit: cover;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 80px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 0 10%;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+nav .center,
+.end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: x-small;
+}
+
+body > .second {
+  width: 100%;
+  height: 60vh;
+  background-color: black;
+}
+
+.logo {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+nav .center {
+  font-size: large;
+  font-weight: 400;
+}
+
+nav .center div {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.content {
+  position: absolute;
+  top: 100px;
+  width: 80%;
+  height: calc(100% - 100px);
+  /* background-color: white; */
+  color: white;
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.first > .content > .first {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+  color: orange;
+}
+
+.first > .content > .second {
+  font-size: 62px;
+}
+
+.first > .content > ul {
+  list-style-position: inside;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.first > .content > ul::marker {
+  color: orange !important;
+}
+
+.first > .content > .fourth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.first > .content > .fourth > button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: red;
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.first > .content > .fourth > .base {
+  color: white;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.first > .content > .fourth .sup {
+  color: orange;
+  font-size: large;
+  font-weight: 600;
+}
+
+body > .second {
+  width: 100%;
+  height: 120vh;
+  background-image: url("./images//food21.jpg");
+  object-fit: cover;
+  position: relative;
+}
+
+body > .third {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  position: relative;
+  color: white;
+  /* background-color: blue; */
+  padding-bottom: 100px;
+}
+
+body > .third > .container {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* background-color: white; */
+  /* height: 100%; */
+  padding: 60px;
+}
+
+body > .third > .container > .title,
+.description {
+  text-align: center;
+}
+
+.third > .cards {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: auto;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* .third > .cards > div{
+  width: 300px;
+  height: 300px;
+} */
+
+.third > .cards .card {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+
+.third > .cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hot_badge,
+.discount_badge {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  top: 10px;
+  left: 10px;
+}
+
+.discount_badge {
+  background-color: orange;
+  position: absolute;
+  top: 10px;
+  left: 60px;
+}
+
+.third > .cards .title {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.third > .cards .title + div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+
+.third > .cards .title + div > .original_price,
+.discount_price {
+  color: red;
+  text-decoration: line-through;
+  font-weight: 500;
+  font-size: large;
+}
+
+.third > .cards .title + div > .discount_price {
+  color: grey;
+  font-weight: 500;
+  font-size: large;
+}
+
+.select_options_button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.select_options_button > button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+body > .fourth {
+  background-image: url("./images/food4.jpg");
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  object-fit: fill;
+}
+
+body > .second > .container {
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* background-color: black; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+body > .second > .container > .main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+}
+
+body > .second > .container > .main > .first {
+  font-size: x-large;
+  font-weight: 500;
+  color: orange;
+  font-family: "Protest Revolution", sans-serif;
+}
+
+body > .second > .container > .main > .second {
+  font-size: 40px;
+}
+
+body > .second > .container > .main > .third {
+  font-size: large;
+  font-weight: 500;
+}
+
+body > .second > .container > .main > .fourth {
+  display: flex;
+  align-items: center;
+}
+
+body > .second > .container > .main > .fifth {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  align-items: center;
+}
+
+body > .second > .container > .main > .fifth button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: x-large;
+}
+
+body > .second > .container > .main > .fifth em {
+  font-family: "Pacifico", cursive;
+  font-size: large;
+  font-weight: 100;
+}
+.containerflex {
+  display: flex;
+}
+body > .fourth > .container {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+  /* background-color: brown; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+body > .fourth > .container > .first {
+  font-family: "Pacifico", cursive;
+  font-size: large;
+  font-weight: 600;
+  color: orange;
+  font-size: xx-large;
+}
+
+body > .fourth > .container > .second {
+  font-size: 50px;
+}
+
+body > .fourth > .container button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  font-size: large;
+  border-radius: 10px;
+}
+
+body > .fifth {
+  width: 100%;
+  background-color: black;
+  height: 90vh;
+}
+
+body > .fifth > .container {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+body > .fifth > .container > .left {
+  width: 100%;
+  height: 100%;
+}
+
+body > .fifth > .container > .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+body > .fifth > .container > .right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+
+body > .fifth > .container > .right > .title {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+body > .fifth > .container > .right > .description {
+  text-align: start;
+}
+
+body > .fifth > .container > .right  button {
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  background-color: orange;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.shopping_cart {
+  position: relative;
+}
+
+.shopping_cart span {
+  display: block;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: orange;
+  color: white;
+  font-weight: 200;
+  position: absolute;
+
+  top: -4px;
+  right: -4px;
+}
+
+body > .sixth{
+  width: 100%;
+  height: 80vh;
+  background-color: black;
+  color: white;
+}
+
+
+body > .sixth >.container{
+  width: 80%;
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 50px;
+}
+
+body > .sixth >.container >h1{
+  text-align: center;
+}
+body > .sixth >.container > .description{
+  display: flex;
+  justify-content: center;
+}
+
+body > .sixth >.container > .description>p{
+  text-align: center;
+  width: 500px;
+  font-weight: 500;
+}
+
+body > .sixth >.container >.gallery{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding: 0 100px;
+  margin-top: 30px;
+}
+
+
+body > .sixth >.container >.gallery >.card{
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding-bottom: 10px;
+  border-radius: 6px;
+}
+
+body > .sixth >.container >.gallery >.card >.name{
+  text-align: center;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+body > .sixth >.container >.gallery >.card >.profession{
+  text-align: center;
+  font-size: large;
+  font-weight: 400;
+  color: grey;
+}
+
+
+body > .sixth >.container >.gallery >.card >.image{
+  width: 100%;
+}
+
+
+body > .sixth >.container >.gallery >.card >.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+body > .seventh{
+  background-image: url("./images/galaxy1.jpg");
+  width: 100%;
+  height: 30vh;
+  object-fit: contain;
+}
+
+
+body > .seventh > .container{
+  width: 80%;
+  height: 100%;
+  /* background-color: black; */
+  margin: 0 10%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+body > .eight{
+  width: 100%;
+  height: 600px;
+  background-color: black;
+}
+
+body > .eight > .container{
+  width: 80%;
+  height: 100%;
+  margin: 0 10%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+body > .eight > .container > .profile{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+body > .eight > .container > .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+
+body > .eight > .container > .name{
+  font-size: x-large;
+  font-weight: 700;
+}
+body > .eight > .container > .profession{
+  font-size:large;
+  font-weight: 500;
+}
+
+body > .eight > .container > .description{
+  display: flex;
+  justify-content: center;
+}
+body > .eight > .container > .description > div{
+  max-width: 720px;
+  font-weight: 400;
+}
+
+body > .ninth  {
+  width: 100%;
+  height: 930px;
+  background-color: #0F1D20;
+  color: white;
+
+}
+
+body > .ninth > .container{
+  width: 80%;
+  margin: 0 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;align-items: center;
+  gap: 20px;
+}
+
+body > .ninth > .container > .title{
+  font-size: 42px;
+  font-weight: 600;
+}
+
+body > .ninth > .container > .description{
+  display: flex;
+  justify-content: center;
+}
+
+body > .ninth > .container > .description div{
+  max-width: 720px;
+  font-weight: 300;
+}
+
+
+body > .ninth > .container > .gallery9{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  
+  justify-items: center;
+  gap: 10px;
+}
+
+body > .ninth > .container > .gallery9 > .card{
+  max-width: 368px;
+  min-height: 540px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+body > .ninth > .container > .gallery9 > .card > .image{
+  width: 100%;
+  height: 300px;
+  background-color: brown;
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+body > .ninth > .container > .gallery9 > .card > .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body > .ninth > .container > .gallery9 > .card > .main{
+  background-color: white;
+  padding: 30px;
+  color: black;
+}
+
+body > .ninth > .container > .gallery9 > .card   .title{
+  font-size: x-large;
+  font-weight: 500;
+}
+
+body > .ninth > .container > .gallery9 > .card .description{
+  text-align: start;
+  font-weight: 400;
+  color: grey;
+}
+
+body > .ninth > .container > .gallery9 > .card hr{
+  margin: 5px 0;
+}
+
+
+body > .ninth > .container > .gallery9 > .card footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+}
+body > .ninth > .container > .gallery9 > .card .date{
+  color: grey;
+}
+
+body > .ninth > .container > .gallery9 > .card .read_more{
+  text-decoration: underline;
+  font-size: large;
+  text-underline-offset: 3px;
+}
+
+body > footer{
+  height: 580px;
+  width: 100%;
+  background-color: #0B1517;
+}
+
+body > footer > .container{
+  width: 80%;
+  margin: 0 10%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  /* background-color: brown; */
+  display: flex;
+  align-items: center;
+  color: white;
+}
+body > footer > .container > .adress > .title{
+  font-size: xx-large;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+body > footer > .container > .adress > .description{
+  text-align: start;
+  font-weight: 300;
+}
+
+body > footer > .container > .adress > .location,.mail,.contact{
+  display: flex;
+  align-items: center;gap: 5px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+body > footer > .container > .adress  i{
+  font-size: xx-large;
+}
+
+body > footer > .container > .quick_links .title{
+  font-size: xx-large;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+body > footer > .container > .quick_links .title::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+  height: 2px; 
+  width: 50%; 
+  background-color: white; 
+}
+
+body > footer > .container > .quick_links .links{
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+
+
+body > footer > .container >  .instagram > .gallery{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2px;
+}
+
+body > footer > .container >  .instagram > .gallery > div{
+  width: 83px;
+  height: 80px;
+}
+
+body > footer > .container > .instagram > .gallery > div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body > footer > .container >  .instagram .title{
+  font-size: xx-large;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+body > footer > .container >  .instagram .title::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+  height: 2px; 
+  width: 50%; 
+  background-color: white; 
+}
+body > footer > .container >  .subscribe .title{
+  font-size: xx-large;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+body > footer > .container >  .subscribe .title::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+  height: 2px; 
+  width: 50%; 
+  background-color: white; 
+}
+
+body > footer > .container >  .subscribe .description{
+  text-align: start;
+  font-weight: 300;
+}
+
+body > footer > .container >  .subscribe .input{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin: 5px 0;
+}
+
+body > footer > .container >  .subscribe .input input{
+  border:1px solid white;
+  outline: none;
+  padding: 10px;
+  text-indent: 3px;
+  background: transparent;
+  color: white;
+}
+body > footer > .container >  .subscribe .input button{
+  background-color: orange;
+  color: white;
+  padding:6px 8px;
+  border: none;
+  outline: none;
+}
+
+body > footer > .container >  .subscribe > .social{
+  display: flex;
+  gap: 5px;
+  padding: 10px 0;
+}
+
+body > footer  >.copy_rights{
+  width: 100%;
+  height: 100px;
+  background-color: #0B1517;
+  color: white;
+  display: flex;
+  align-items: center;justify-content: center;
+  font-weight: 500;
+}
+
+body > footer > .container > div {
+  width: 100%;
+  min-height: 300px ;
+  
+}
