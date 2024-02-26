@@ -8,7 +8,7 @@ body {
   width: 100%;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -40,8 +40,16 @@ nav .center,
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  font-size: x-small;
+  /* gap: 30px; */
+  font-size: xx-small;
+  /* margin-right: 20px; */
+}
+
+nav .center > div{
+  margin-right: 30px;
+}
+nav .end > div{
+  margin-right: 20px;
 }
 
 body > .second {
@@ -147,7 +155,6 @@ body > .third {
   height: auto;
   position: relative;
   color: white;
-  /* background-color: blue; */
   padding-bottom: 100px;
 }
 
@@ -155,14 +162,31 @@ body > .third > .container {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  /* background-color: white; */
-  /* height: 100%; */
+
   padding: 60px;
 }
 
-body > .third > .container > .title,
-.description {
+body > .third > .container > .title {
   text-align: center;
+}
+
+#center {
+  display: flex;
+  justify-content: center;
+}
+
+#center2 {
+  width: 700px;
+}
+
+body > .third > .container > .description {
+  display: flex;
+  justify-content: center;
+}
+
+body > .third > .container > .description > div {
+  width: 720px;
+  font-weight: 500;
 }
 
 .third > .cards {
@@ -173,7 +197,7 @@ body > .third > .container > .title,
   /* background-color: red; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 30px;
 }
 
 /* .third > .cards > div{
@@ -421,7 +445,7 @@ body > .fifth > .container > .right > .description {
   text-align: start;
 }
 
-body > .fifth > .container > .right  button {
+body > .fifth > .container > .right button {
   border: none;
   outline: none;
   padding: 15px 30px;
@@ -449,15 +473,14 @@ body > .fifth > .container > .right  button {
   right: -4px;
 }
 
-body > .sixth{
+body > .sixth {
   width: 100%;
   height: 80vh;
   background-color: black;
   color: white;
 }
 
-
-body > .sixth >.container{
+body > .sixth > .container {
   width: 80%;
   margin: 0 10%;
   display: flex;
@@ -466,32 +489,31 @@ body > .sixth >.container{
   padding: 50px;
 }
 
-body > .sixth >.container >h1{
+body > .sixth > .container > h1 {
   text-align: center;
 }
-body > .sixth >.container > .description{
+body > .sixth > .container > .description {
   display: flex;
   justify-content: center;
 }
 
-body > .sixth >.container > .description>p{
+body > .sixth > .container > .description > p {
   text-align: center;
   width: 500px;
   font-weight: 500;
 }
 
-body > .sixth >.container >.gallery{
+body > .sixth > .container > .gallery {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 0 100px;
   margin-top: 30px;
 }
 
-
-body > .sixth >.container >.gallery >.card{
+body > .sixth > .container > .gallery > .card {
   width: 100%;
   background-color: white;
   color: black;
@@ -499,40 +521,37 @@ body > .sixth >.container >.gallery >.card{
   border-radius: 6px;
 }
 
-body > .sixth >.container >.gallery >.card >.name{
+body > .sixth > .container > .gallery > .card > .name {
   text-align: center;
   font-size: x-large;
   font-weight: 500;
 }
 
-body > .sixth >.container >.gallery >.card >.profession{
+body > .sixth > .container > .gallery > .card > .profession {
   text-align: center;
   font-size: large;
   font-weight: 400;
   color: grey;
 }
 
-
-body > .sixth >.container >.gallery >.card >.image{
+body > .sixth > .container > .gallery > .card > .image {
   width: 100%;
 }
 
-
-body > .sixth >.container >.gallery >.card >.image img{
+body > .sixth > .container > .gallery > .card > .image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-body > .seventh{
+body > .seventh {
   background-image: url("./images/galaxy1.jpg");
   width: 100%;
   height: 30vh;
   object-fit: contain;
 }
 
-
-body > .seventh > .container{
+body > .seventh > .container {
   width: 80%;
   height: 100%;
   /* background-color: black; */
@@ -546,13 +565,13 @@ body > .seventh > .container{
   font-weight: 600;
 }
 
-body > .eight{
+body > .eight {
   width: 100%;
   height: 600px;
   background-color: black;
 }
 
-body > .eight > .container{
+body > .eight > .container {
   width: 80%;
   height: 100%;
   margin: 0 10%;
@@ -564,7 +583,7 @@ body > .eight > .container{
   gap: 6px;
 }
 
-body > .eight > .container > .profile{
+body > .eight > .container > .profile {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -577,77 +596,75 @@ body > .eight > .container > .profile img {
   border-radius: 50%;
 }
 
-
-body > .eight > .container > .name{
+body > .eight > .container > .name {
   font-size: x-large;
   font-weight: 700;
 }
-body > .eight > .container > .profession{
-  font-size:large;
+body > .eight > .container > .profession {
+  font-size: large;
   font-weight: 500;
 }
 
-body > .eight > .container > .description{
+body > .eight > .container > .description {
   display: flex;
   justify-content: center;
 }
-body > .eight > .container > .description > div{
+body > .eight > .container > .description > div {
   max-width: 720px;
   font-weight: 400;
 }
 
-body > .ninth  {
+body > .ninth {
   width: 100%;
   height: 930px;
-  background-color: #0F1D20;
+  background-color: #0f1d20;
   color: white;
-
 }
 
-body > .ninth > .container{
+body > .ninth > .container {
   width: 80%;
   margin: 0 10%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
-body > .ninth > .container > .title{
+body > .ninth > .container > .title {
   font-size: 42px;
   font-weight: 600;
 }
 
-body > .ninth > .container > .description{
+body > .ninth > .container > .description {
   display: flex;
   justify-content: center;
 }
 
-body > .ninth > .container > .description div{
+body > .ninth > .container > .description div {
   max-width: 720px;
   font-weight: 300;
 }
 
-
-body > .ninth > .container > .gallery9{
+body > .ninth > .container > .gallery9 {
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  
+  grid-template-columns: repeat(3, 1fr);
+
   justify-items: center;
   gap: 10px;
 }
 
-body > .ninth > .container > .gallery9 > .card{
+body > .ninth > .container > .gallery9 > .card {
   max-width: 368px;
   min-height: 540px;
   background-color: white;
   border-radius: 10px;
 }
 
-body > .ninth > .container > .gallery9 > .card > .image{
+body > .ninth > .container > .gallery9 > .card > .image {
   width: 100%;
   height: 300px;
   background-color: brown;
@@ -656,33 +673,32 @@ body > .ninth > .container > .gallery9 > .card > .image{
   border-bottom-right-radius: 0;
 }
 
-body > .ninth > .container > .gallery9 > .card > .image img{
+body > .ninth > .container > .gallery9 > .card > .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-body > .ninth > .container > .gallery9 > .card > .main{
+body > .ninth > .container > .gallery9 > .card > .main {
   background-color: white;
   padding: 30px;
   color: black;
 }
 
-body > .ninth > .container > .gallery9 > .card   .title{
+body > .ninth > .container > .gallery9 > .card .title {
   font-size: x-large;
   font-weight: 500;
 }
 
-body > .ninth > .container > .gallery9 > .card .description{
+body > .ninth > .container > .gallery9 > .card .description {
   text-align: start;
   font-weight: 400;
   color: grey;
 }
 
-body > .ninth > .container > .gallery9 > .card hr{
+body > .ninth > .container > .gallery9 > .card hr {
   margin: 5px 0;
 }
-
 
 body > .ninth > .container > .gallery9 > .card footer {
   display: flex;
@@ -690,55 +706,58 @@ body > .ninth > .container > .gallery9 > .card footer {
   align-items: center;
   font-weight: 300;
 }
-body > .ninth > .container > .gallery9 > .card .date{
+body > .ninth > .container > .gallery9 > .card .date {
   color: grey;
 }
 
-body > .ninth > .container > .gallery9 > .card .read_more{
+body > .ninth > .container > .gallery9 > .card .read_more {
   text-decoration: underline;
   font-size: large;
   text-underline-offset: 3px;
 }
 
-body > footer{
+body > footer {
   height: 580px;
   width: 100%;
-  background-color: #0B1517;
+  background-color: #0b1517;
 }
 
-body > footer > .container{
+body > footer > .container {
   width: 80%;
   margin: 0 10%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   /* background-color: brown; */
   display: flex;
   align-items: center;
   color: white;
 }
-body > footer > .container > .adress > .title{
+body > footer > .container > .adress > .title {
   font-size: xx-large;
   font-weight: 500;
   margin-bottom: 20px;
 }
-body > footer > .container > .adress > .description{
+body > footer > .container > .adress > .description {
   text-align: start;
   font-weight: 300;
 }
 
-body > footer > .container > .adress > .location,.mail,.contact{
+body > footer > .container > .adress > .location,
+.mail,
+.contact {
   display: flex;
-  align-items: center;gap: 5px;
+  align-items: center;
+  gap: 5px;
   font-weight: 200;
   margin-top: 10px;
 }
-body > footer > .container > .adress  i{
+body > footer > .container > .adress i {
   font-size: xx-large;
 }
 
-body > footer > .container > .quick_links .title{
+body > footer > .container > .quick_links .title {
   font-size: xx-large;
   font-weight: 500;
   margin-bottom: 20px;
@@ -746,122 +765,120 @@ body > footer > .container > .quick_links .title{
   display: inline-block;
 }
 
-body > footer > .container > .quick_links .title::after{
+body > footer > .container > .quick_links .title::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   border-radius: 10px;
-  height: 2px; 
-  width: 50%; 
-  background-color: white; 
+  height: 2px;
+  width: 50%;
+  background-color: white;
 }
 
-body > footer > .container > .quick_links .links{
+body > footer > .container > .quick_links .links {
   display: flex;
   flex-direction: column;
   font-weight: 300;
 }
 
-
-
-body > footer > .container >  .instagram > .gallery{
+body > footer > .container > .instagram > .gallery {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2px;
 }
 
-body > footer > .container >  .instagram > .gallery > div{
+body > footer > .container > .instagram > .gallery > div {
   width: 83px;
   height: 80px;
 }
 
-body > footer > .container > .instagram > .gallery > div img{
+body > footer > .container > .instagram > .gallery > div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-body > footer > .container >  .instagram .title{
+body > footer > .container > .instagram .title {
   font-size: xx-large;
   font-weight: 500;
   margin-bottom: 20px;
   position: relative;
   display: inline-block;
 }
-body > footer > .container >  .instagram .title::after{
+body > footer > .container > .instagram .title::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   border-radius: 10px;
-  height: 2px; 
-  width: 50%; 
-  background-color: white; 
+  height: 2px;
+  width: 50%;
+  background-color: white;
 }
-body > footer > .container >  .subscribe .title{
+body > footer > .container > .subscribe .title {
   font-size: xx-large;
   font-weight: 500;
   margin-bottom: 20px;
   position: relative;
   display: inline-block;
 }
-body > footer > .container >  .subscribe .title::after{
+body > footer > .container > .subscribe .title::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   border-radius: 10px;
-  height: 2px; 
-  width: 50%; 
-  background-color: white; 
+  height: 2px;
+  width: 50%;
+  background-color: white;
 }
 
-body > footer > .container >  .subscribe .description{
+body > footer > .container > .subscribe .description {
   text-align: start;
   font-weight: 300;
 }
 
-body > footer > .container >  .subscribe .input{
+body > footer > .container > .subscribe .input {
   display: flex;
   align-items: center;
   gap: 2px;
   margin: 5px 0;
 }
 
-body > footer > .container >  .subscribe .input input{
-  border:1px solid white;
+body > footer > .container > .subscribe .input input {
+  border: 1px solid white;
   outline: none;
   padding: 10px;
   text-indent: 3px;
   background: transparent;
   color: white;
 }
-body > footer > .container >  .subscribe .input button{
+body > footer > .container > .subscribe .input button {
   background-color: orange;
   color: white;
-  padding:6px 8px;
+  padding: 6px 8px;
   border: none;
   outline: none;
 }
 
-body > footer > .container >  .subscribe > .social{
+body > footer > .container > .subscribe > .social {
   display: flex;
   gap: 5px;
   padding: 10px 0;
 }
 
-body > footer  >.copy_rights{
+body > footer > .copy_rights {
   width: 100%;
   height: 100px;
-  background-color: #0B1517;
+  background-color: #0b1517;
   color: white;
   display: flex;
-  align-items: center;justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
 }
 
 body > footer > .container > div {
   width: 100%;
-  min-height: 300px ;
-  
+  min-height: 300px;
 }
